@@ -98,21 +98,21 @@ a.disabled{
 #navBar a .big{
     display: block;
     font-family: 'Montserrat', 'Helvetica', sans-serif;
-    font-size: 2em;
+    font-size: 24px;
     font-weight: 300;
     transition: font-size 0.23s ease;
     order: 1;
 }
 
 #navBar a .small{
-    padding-top: 1em;
-    font-size: 0em;
+    padding-top: 12px;
+    font-size: 0;
     order: 2;
     transition: font-size 0.13s ease;
 }
 
 #navBar a img{
-    height: 1em;
+    height: 12px;
     vertical-align: baseline;
 }
 
@@ -126,7 +126,7 @@ a.disabled{
 }
 
 .home-container > h1{
-    font-size: 2em;
+    font-size: 28px;
     font-weight: 400;
     font-family: "Raleway", "Helvetica", sans-serif;
 }
@@ -139,19 +139,19 @@ footer{
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 6em;
+    min-height: 72px;
     background-color: #0a0a0a;
     box-shadow: 0 0 2px rgba(0,0,0,1);
 }
 
 footer > a{
-    font-size: 3em;
+    font-size: 36px;
     color: #0a0a0a !important;
     background-color: #e5ca47;
     border-radius: 4px;
     box-shadow: 2px 1px 4px rgba(0,0,0,0.5);
-    margin: 0.5em;
-    padding: 0.25em 3em;
+    margin: 6px;
+    padding: 3px 36px;
 }
 
 footer > div{
@@ -162,22 +162,22 @@ footer > div{
 }
 
 footer img{
-    height: 3em;
-    margin: 1.5em;
+    height: 36px;
+    margin: 18px;
 }
 
-@media (min-width: 35em) { 
+@media (min-width: 420px) { 
     
     #navBar{
-        height: 7.5em;
+        height: 120px;
     }
     
     #navBar a .big{
-        font-size: 4em;
+        font-size: 48px;
     }
     
     #navBar a .small{
-        font-size: 1.25em;
+        font-size: 15px;
     }
     
     #logo{
@@ -185,6 +185,6 @@ footer img{
     }
     
     .home-container{
-        margin-top: 7.5em;
+        margin-top: 120px;
     }
 }

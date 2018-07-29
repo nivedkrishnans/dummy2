@@ -42,8 +42,8 @@
 .home-section{
     background-color: #0d0d0b;
     max-width: 100%;
-    margin: 1em 2em;
-    padding: 1em 1em;
+    margin: 18px 18px;
+    padding: 18px 18px;
     box-sizing: border-box;
     box-shadow: 2px 1px 4px rgba(0,0,0,1);
     -webkit-filter: brightness(10%);
@@ -63,7 +63,7 @@
     height: 56px;
     background-size: 48px 56px;
     background-repeat: no-repeat;
-    top: 3.5em;
+    top: 12px;
     filter: drop-shadow(0 0 -4px rgba(0,0,0,0.5));
 }
 
@@ -76,7 +76,7 @@
     background-size: cover;
     margin: 0;
     border: 0;
-    padding-top: 2em;
+    padding-top: 36px;
     filter: none;
     transform: none;
     min-height: 100vh;
@@ -91,14 +91,14 @@
 
 #title{
     font-weight: 300;
-    font-size: 3em;
+    font-size: 36px;
     padding: 0;
     margin: 0;
     animation: showh 2.5s ease-in-out 1s 1 both paused;
 }
 
 #title-caption{
-    padding: 1em 0 2em 0;
+    padding: 12px 0 24px 0;
     flex-grow: 0;
     animation: showp 2.5s ease-in-out 1s 1 both paused;
 }
@@ -106,7 +106,7 @@
 #title-register{
     display: block;
     color: #e5ca47;
-    font-size: 2em;
+    font-size: 24px;
     padding: 0;
     animation: showa 2.5s ease-in-out 1s 1 both paused;
 }
@@ -279,7 +279,7 @@
 
 .home-section > h1{
     font-weight: 400;
-    font-size: 2.5em;
+    font-size: 45px;
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 1em 1em;
@@ -315,13 +315,13 @@
 
 .home-section > div > div{
     margin: 0;
-    padding: 1em 2em;
+    padding: 18px 36px;
     flex-grow: 2;
 }
 
 .home-section > div > img{
     margin: 0;
-    padding: 1em 2em;
+    padding: 18px 36px;
     width: 75%;
     flex-grow: 2;
 }
@@ -346,8 +346,8 @@
 
 
 
-@media (min-width: 35em){
-    
+@media (min-width: 420px){
+
     #sponsorLogo,#iiscLogo{
     width: 144px;
     bottom: 36px;   
@@ -364,7 +364,7 @@
 
     .home-container{
         margin-top: 0;
-        margin-bottom: 7.5em;
+        margin-bottom: 420px;
     }
 
     article{
@@ -399,7 +399,7 @@
     }
     
     .home-section:first-of-type h1{
-        font-size: 5em;
+        font-size: 90px;
     }
     
     .home-section:first-of-type > div{
@@ -407,19 +407,19 @@
     }
     
     #title{
-        font-size: 5em;
-        padding: 0.5em;
+        font-size: 60px;
+        padding: 6px;
         padding-bottom: 0;
     }
     
     #title-caption{
-        font-size: 1.5em;
-        padding: 0.333em 1.6666em;
+        font-size: 18px
+        padding: 4px 20px;
     }
     
     #title-register{
-        font-size: 2.5em;
-        margin: 1em;
+        font-size: 30px;
+        margin: 12px;
     }
     
     .home-section:first-of-type > svg{
