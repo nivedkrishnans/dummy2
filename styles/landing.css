@@ -12,7 +12,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:300,400');
 
 *{
-    border: 1px dotted white;
 }
 
 
@@ -42,7 +41,7 @@
 .home-section{
     background-color: #0d0d0b;
     max-width: 100%;
-    margin: 18px 18px;
+    margin: 18px 14px;
     padding: 18px 18px;
     box-sizing: border-box;
     box-shadow: 2px 1px 4px rgba(0,0,0,1);
@@ -72,7 +71,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-image: url("assets/img/Collage_processed.png");
+    background-image: url("..../assets/img/Collage_processed.png");
     background-size: cover;
     margin: 0;
     border: 0;
@@ -80,25 +79,31 @@
     filter: none;
     transform: none;
     min-height: 100vh;
+    padding: 40px;
 }
 
 .home-section:first-of-type > div{
+
     flex: 2 0 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding: 0;
+    margin-top: 8px;
 }
 
 #title{
     font-weight: 300;
-    font-size: 36px;
+    font-size: 48px;
     padding: 0;
     margin: 0;
     animation: showh 2.5s ease-in-out 1s 1 both paused;
 }
 
 #title-caption{
-    padding: 12px 0 24px 0;
+
+    padding:0;
+    margin: 6px 0 6px 0;
     flex-grow: 0;
     animation: showp 2.5s ease-in-out 1s 1 both paused;
 }
@@ -106,15 +111,26 @@
 #title-register{
     display: block;
     color: #e5ca47;
-    font-size: 24px;
-    padding: 0;
+    font-size: 18px;
+    padding: 6px 8px;
+    margin: 6px;
     animation: showa 2.5s ease-in-out 1s 1 both paused;
+    border: #e5ca47 solid 2px;
+    background-color: rgba(0,0,0,0);
+    transition: all 0.2s;
+}
+
+#title-register:hover{
+    color: rgba(0,0,0,0.8);
+    background-color: rgba(229, 202, 71,1);
+    border: rgba(0,0,0,0.8) solid 2px;
 }
 
 
 .home-section:first-of-type > svg{
     display: block;
     height: 30vh;
+    margin: 4px;
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 0;
@@ -248,32 +264,32 @@
 }
 
 .l.tri-red::before{
-    background-image: url("/assets/img/tris/tlr.svg");
+    background-image: url("../assets/img/tris/tlr.svg");
     left: 0;
 }
 
 .l.tri-yellow::before{
-    background-image: url("/assets/img/tris/tly.svg");
+    background-image: url("../assets/img/tris/tly.svg");
     left: 0;
 }
 
 .l.tri-green::before{
-    background-image: url("/assets/img/tris/tlg.svg");
+    background-image: url("../assets/img/tris/tlg.svg");
     left: 0;
 }
 
 .r.tri-red::before{
-    background-image: url("/assets/img/tris/trr.svg");
+    background-image: url("../assets/img/tris/trr.svg");
     right: 0;
 }
 
 .r.tri-yellow::before{
-    background-image: url("/assets/img/tris/try.svg");
+    background-image: url("../assets/img/tris/try.svg");
     right: 0;
 }
 
 .r.tri-green::before{
-    background-image: url("/assets/img/tris/trg.svg");
+    background-image: url("../assets/img/tris/trg.svg");
     right: 0;
 }
 
@@ -282,7 +298,7 @@
     font-size: 45px;
     font-family: 'Raleway', sans-serif;
     margin: 0;
-    padding: 1em 1em;
+    padding: 44px 44px;
 }
 
 .l > h1{
@@ -315,7 +331,7 @@
 
 .home-section > div > div{
     margin: 0;
-    padding: 18px 36px;
+    padding: 18px 18px;
     flex-grow: 2;
 }
 
@@ -341,7 +357,7 @@
 }
 
 #tstsr{
-    background-image: url("/assets/img/person.png");
+    background-image: url("../assets/img/person.png");
 }
 
 
@@ -364,7 +380,7 @@
 
     .home-container{
         margin-top: 0;
-        margin-bottom: 420px;
+        margin-bottom: 20px;
     }
 
     article{
@@ -380,7 +396,14 @@
         flex-direction: row-reverse;
         align-items: flex-start;
     }
-    
+    .home-section{
+        padding: 18px 32px;
+        margin: 18px 32px;
+    }
+
+    .home-section > div{
+        padding: 18px 36px;
+    }
     .home-section > div > div{
         flex-basis: 0;
     }
@@ -404,22 +427,25 @@
     
     .home-section:first-of-type > div{
         flex-direction: column;
+        justify-content: center;
     }
     
     #title{
-        font-size: 60px;
+        font-size: 96px;
         padding: 6px;
+        margin: 24px;
         padding-bottom: 0;
     }
     
     #title-caption{
-        font-size: 18px
+        font-size: 24px;
         padding: 4px 20px;
+        margin: 0 24px 24px 24px;
     }
     
     #title-register{
-        font-size: 30px;
-        margin: 12px;
+        font-size: 24px;
+        margin: 0 24px 24px 48px;
     }
     
     .home-section:first-of-type > svg{

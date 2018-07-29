@@ -48,7 +48,7 @@ a.disabled{
     flex-wrap: wrap;
     align-items: baseline;
     width: 100%;
-    min-height: 3.5em;
+    min-height: 42px;
     position: fixed;
     background-color: #000000;
     z-index: 2;
@@ -75,7 +75,7 @@ a.disabled{
 
 #navBar li{
     flex: 1;
-    margin: 0.2em 2%;
+    margin: 4px 2%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -112,7 +112,7 @@ a.disabled{
 }
 
 #navBar a img{
-    height: 12px;
+    height: 24px;
     vertical-align: baseline;
 }
 
@@ -169,11 +169,11 @@ footer img{
 @media (min-width: 420px) { 
     
     #navBar{
-        height: 120px;
+        height: 84px;
     }
     
     #navBar a .big{
-        font-size: 48px;
+        height: 48px;
     }
     
     #navBar a .small{
