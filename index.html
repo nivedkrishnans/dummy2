@@ -156,8 +156,9 @@
                 bottom: 200px;
                 right: 2px;
                 width: 80px;
-                height: 20px;
-                background-color: green;
+                height: 100px;
+                background-color: black;
+                border: green 2px solid;
                 color: red;
             }
         </style>
@@ -167,7 +168,7 @@
             var navBarElement = document.getElementById("navBar");
 
             function navAppear(){
-                if(document.documentElement.scrollTop > 50){
+                if((document.body.scrollTop || document.documentElement.scrollTop) > 50){
                     navBarElement.style.top = 0;
                 }
                 else{
@@ -187,7 +188,7 @@
 
             var t=0;
             var testBox = setInterval(function(){
-                document.getElementById("test").innerHTML =  document.documentElement.scrollTop + "\t" + t;
+                document.getElementById("test").innerHTML =  (document.body.scrollTop) + "<br>" + (document.documentElement.scrollTop) + "<br>" + (window.scrollY) + "<br>" + t;
                     t++;
             } , 500);
 
