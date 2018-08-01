@@ -120,9 +120,10 @@
 }
 
 #title-register:hover{
-    color: rgba(0,0,0,0.8);
+    color: rgba(0,0,0,0.9);
     background-color: rgba(229, 202, 71,1);
     border: rgba(0,0,0,0.8) solid 2px;
+    text-shadow: black 0.2px 0.2px;
 }
 
 
@@ -361,7 +362,7 @@
 
 
 
-@media (min-width: 420px){
+@media (min-width: 760px){
 
     #sponsorLogo,#iiscLogo{
     width: 144px;

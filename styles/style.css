@@ -25,6 +25,10 @@ body{
     color: #fff8de;
 }
 
+a{
+    transition: all 0.2s;
+}
+
 a, a:visited{
     text-decoration: none;
     color: #baa956;
@@ -50,7 +54,7 @@ a.disabled{
     width: 100%;
     min-height: 42px;
     position: fixed;
-    background-color: #000000;
+    background-color: rgba(8,8,8,0.95);
     z-index: 2;
 
     padding: 2px 4px;
@@ -60,6 +64,9 @@ a.disabled{
 }
 
 
+#navBar a:hover{
+    transform: scale(1.05 , 1.05);
+}
 
 #navBar ul{
     display: flex;
@@ -166,7 +173,7 @@ footer img{
     margin: 18px;
 }
 
-@media (min-width: 420px) { 
+@media (min-width: 760px) { 
     
     #navBar{
         height: 84px;

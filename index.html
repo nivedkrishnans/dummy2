@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <!-- saved from url=(0032)https://ninadhuilgol.github.io/# -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+        <head>
+
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Pravega 2019 - IISc's Annual Cultural Fest</title>
-        <link rel="stylesheet" href="./styles/style.css">
-        <link rel="stylesheet" href="./styles/landing.css">
-        <link rel="icon" href="./assets/img/logo-gold.svg">
-    </head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+    		<title>Pravega 2019 - IISc's Annual Cultural Fest</title>
+            <link rel="stylesheet" href="./styles/style.css">
+            <link rel="stylesheet" href="./styles/landing.css">
+            <link rel="icon" href="./assets/img/logo-gold.svg">
+        </head>
 	<body onload="activateAnims()">
 		<header>
             <nav id="navBar">
@@ -168,7 +171,7 @@
             var navBarElement = document.getElementById("navBar");
 
             function navAppear(){
-                if((document.body.scrollTop || document.documentElement.scrollTop) > 50){
+                if(window.pageYOffset > 10){
                     navBarElement.style.top = 0;
                 }
                 else{
@@ -188,12 +191,9 @@
 
             var t=0;
             var testBox = setInterval(function(){
-                document.getElementById("test").innerHTML =  (document.body.scrollTop) + "<br>" + (document.documentElement.scrollTop) + "<br>" + (window.scrollY) + "<br>" + t;
+                document.getElementById("test").innerHTML =  (document.body.scrollTop) + "<br>" + (document.documentElement.scrollTop) + "<br>" + (window.scrollY) + "<br>" +(window.pageYOffset) + "<br>" + t;
                     t++;
             } , 500);
-
-
-            document.getElementsByClassName('home-section')[0].style.backgroundImage = "assets/img/Collage_processed.png";
 
 
         </script>
