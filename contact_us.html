@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Pravega 2019 - IISc's Annual Cultural Fest</title>
         <link rel="stylesheet" href="./styles/style.css">
-        <link rel="stylesheet" href="./styles/landing.css">
         <link rel="stylesheet" href="./styles/contact_us.css">
         <link rel="icon" href="./assets/img/logo-gold.svg">
+        <script type="text/javascript" src="particles.js"></script>
     </head>
     <body>
 
@@ -54,115 +54,120 @@
         </header>
         
         <!-- a new div called scrollable content has been made to keep all the scrollable content (duh!) ie. excluding the top bar the social media bar etc. this has been done so that the custom scroll bar can be added in a position which is not at one edge of the browser and starts only after the topbar and ends before the bottom bar -->
-        
-        <div class="scrollable_content">
-            <!-- stuff for the chief coordinates box,perhaps to be given some extra visual emphasis in css -->
+        <div id="particles-js">
+            <div class="scrollable_content">
+                <!-- stuff for the chief coordinates box,perhaps to be given some extra visual emphasis in css -->
 
-            <div class="container" id="chief-container">
-                <div class="image">
-                    <!--Image-->
-                </div>
-                <div class="text_container" id="chief-text">
-                    <div class="coordinator">
-                        CHIEF COORDINATOR
-                    </div>
-                    <div class="Name">
-                        Firstname Secondname
-                    </div>
-                    <div class="details">
-                        <p>Phone:</p>
-                        <p>email:</p>
-                    </div>
-                </div>   
-            </div>
-
-            <!-- stuff for all the other coordinates boxes, the individual containers are organised using a simple flexbox setup with flexwrap in the css -->
-
-            <div class="megacontainer">
-
-            <!-- megacontainer contains the individual containers in a flexbox -->
-
-                <!--copy & paste this block to add a new coordinator place holder -->
-                <div class="container">
+                <div class="container" id="chief-container">
                     <div class="image">
                         <!--Image-->
                     </div>
-                    <div class="text_container">
+                    <div class="text_container" id="chief-text">
                         <div class="coordinator">
-                            Coordinator type X
+                            CHIEF COORDINATOR
                         </div>
                         <div class="Name">
                             Firstname Secondname
                         </div>
                         <div class="details">
-                            <p>Phone:</p>
+                            <div class="phone">
+                                <div class="icon">
+                                
+                                </div>
+                                <div class="details-text">##############</div>
+                            </div>
                             <p>email:</p>
                         </div>
                     </div>   
                 </div>
-                <!-- block ends -->
 
-                <div class="container">
-                    <div class="image">
-                        <!--Image-->
+                <!-- stuff for all the other coordinates boxes, the individual containers are organised using a simple flexbox setup with flexwrap in the css -->
+
+                <div class="megacontainer">
+
+                <!-- megacontainer contains the individual containers in a flexbox -->
+
+                    <!--copy & paste this block to add a new coordinator place holder -->
+                    <div class="container">
+                        <div class="image">
+                            <!--Image-->
+                        </div>
+                        <div class="text_container">
+                            <div class="coordinator">
+                                Coordinator type X
+                            </div>
+                            <div class="Name">
+                                Firstname Secondname
+                            </div>
+                            <div class="details">
+                                <p>Phone:</p>
+                                <p>email:</p>
+                            </div>
+                        </div>   
                     </div>
-                    <div class="text_container">
-                        <div class="coordinator">
-                            Coordinator type X
+                    <!-- block ends -->
+
+                    <div class="container">
+                        <div class="image">
+                            <!--Image-->
                         </div>
-                        <div class="Name">
-                            Firstname Secondname
-                        </div>
-                        <div class="details">
-                            <p>Phone:</p>
-                            <p>email:</p>
-                        </div>
-                    </div>   
-                </div>
-                <div class="container">
-                    <div class="image">
-                        <!--Image-->
+                        <div class="text_container">
+                            <div class="coordinator">
+                                Coordinator type X
+                            </div>
+                            <div class="Name">
+                                Firstname Secondname
+                            </div>
+                            <div class="details">
+                                <p>Phone:</p>
+                                <p>email:</p>
+                            </div>
+                        </div>   
                     </div>
-                    <div class="text_container">
-                        <div class="coordinator">
-                            Coordinator type X
+                    <div class="container">
+                        <div class="image">
+                            <!--Image-->
                         </div>
-                        <div class="Name">
-                            Firstname Secondname
-                        </div>
-                        <div class="details">
-                            <p>Phone:</p>
-                            <p>email:</p>
-                        </div>
-                    </div>   
-                </div>
-                <div class="container">
-                    <div class="image">
-                        <!--Image-->
+                        <div class="text_container">
+                            <div class="coordinator">
+                                Coordinator type X
+                            </div>
+                            <div class="Name">
+                                Firstname Secondname
+                            </div>
+                            <div class="details">
+                                <p>Phone:</p>
+                                <p>email:</p>
+                            </div>
+                        </div>   
                     </div>
-                    <div class="text_container">
-                        <div class="coordinator">
-                            Coordinator type X
+                    <div class="container">
+                        <div class="image">
+                            <!--Image-->
                         </div>
-                        <div class="Name">
-                            Firstname Secondname
-                        </div>
-                        <div class="details">
-                            <p>Phone:</p>
-                            <p>email:</p>
-                        </div>
-                    </div>   
+                        <div class="text_container">
+                            <div class="coordinator">
+                                Coordinator type X
+                            </div>
+                            <div class="Name">
+                                Firstname Secondname
+                            </div>
+                            <div class="details">
+                                <p>Phone:</p>
+                                <p>email:</p>
+                            </div>
+                        </div>   
+                    </div>
                 </div>
-            </div>
 
-            <p class="ref">  </p>
+                <p class="ref">  </p>
 
 
-            <div id="main">
+                <div id="main">
 
+                </div>
             </div>
         </div>
-        <div id="bg"></div>
 
 
 
@@ -181,6 +186,119 @@
     			<svg data-name="Layer 21" height="24" id="Layer_21" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><title/><circle cx="16" cy="8" r="4"/><path d="M12.58331,8.83331C12.37488,8.83331,12,9.26563,12,9.5A8.5,8.5,0,0,1,3.5,18a8.52217,8.52217,0,0,1-1.28479-.1073A11.41717,11.41717,0,0,0,20,8.41663C20,7.681,15.31757,8.83331,12.58331,8.83331Z"/><path d="M12.58331,8.83331a11.385,11.385,0,0,1-8.69452-4.028A3.93758,3.93758,0,0,0,3.35,6.77081,3.9792,3.9792,0,0,0,7.32916,10.75c2.12482,0,5.89844.02264,6.14691-1.96179C13.18054,8.81116,12.8847,8.83331,12.58331,8.83331Z"/><path d="M5.24585,10.04163a3.93437,3.93437,0,0,1-1.88977-.49774c-.00031.02057-.0061.03961-.0061.06024a3.9792,3.9792,0,0,0,3.97919,3.97919c2.19763,0,5.275-1.594,5.275-3.79165C12.60417,8.282,7.42285,10.04163,5.24585,10.04163Z"/><path d="M7.72642,12.99649a3.90991,3.90991,0,0,1-3.02909.52286A3.96636,3.96636,0,0,0,8.49585,16.375a5.25835,5.25835,0,0,0,4.67082-4.66667C13.16667,9.81478,8.82831,12.28888,7.72642,12.99649Z"/><path d="M17.61041,5.37915c-1.32214,0-1.63562,1.6604.075,1.6604a3.96629,3.96629,0,0,0,3.754-2.71222A7.49909,7.49909,0,0,1,17.61041,5.37915Z"/><path d="M18.82916,6.5354a7.52209,7.52209,0,0,1-2.93716-.593c-2.70831-1.14551-4.35526,3.343-.18784,3.343A7.53392,7.53392,0,0,0,22.05579,5.803,7.50268,7.50268,0,0,1,18.82916,6.5354Z"/></svg>
     		</a>
     	</div>
+        
+        <script type="text/javascript">
+            particlesJS("particles-js",{
+  "particles": {
+    "number": {
+      "value": 77,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 121.72854534388323,
+        "line_linked": {
+          "opacity": 0.32884730797372524
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+        </script>
         
     </body>
 </html>

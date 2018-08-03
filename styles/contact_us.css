@@ -1,7 +1,12 @@
 body{
     margin:0;
-    background-color:lemonchiffon;
     overflow: hidden;
+}
+
+#particles-js{
+    background-color: black;
+    height:100vh;
+    width:100vw;
 }
 
 .topbar{
@@ -38,21 +43,6 @@ body{
 }
 
 
-
-#bg{	
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	height: 100vh;
-	width: 100vw;
-	z-index: -10;
-	background-size: auto 80%;
-	background-color: black;
-    background-image:none;
-}
-
 .heading{
     width:100px;
     height:34px;
@@ -76,6 +66,23 @@ body{
     background-image: url(test.png);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.phone{
+    background-color:green;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.icon{
+    display: inline-block;
+    height: 2vw;
+    width:2vw;
+    background-image:url(../assets/img/phone-4.svg);
+}
+
+.details-text{
+    display: inline-block;
 }
 
 .text_container{
