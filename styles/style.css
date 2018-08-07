@@ -46,6 +46,35 @@ a.disabled{
     color: #787460;
 }
 
+#navBarMobile{
+    width: 100%;
+    min-height: 42px;
+    position: fixed;
+    background-color: rgba(8,8,8,1);
+    z-index: 3;
+    padding: 2px 2px;
+    border-bottom: #ffee9c solid 1px;
+    top: 0px;
+    transition: all 0.3s;    
+}
+
+#mobileNavLogo{
+    display: inline-block;
+    height: 36px;
+
+    float: left;
+    margin: auto 10px;
+
+}
+
+#hamburgerButton{
+    position: relative;
+    float: right;
+    margin: 6px 10px;
+    display: inline-block;
+}
+
+
 #navBar{
     display: flex;
     flex-direction: row;
@@ -105,17 +134,18 @@ a.disabled{
 #navBar a .big{
     display: block;
     font-family: 'Montserrat', 'Helvetica', sans-serif;
-    font-size: 24px;
+    font-size: 48px;
+    height: 48px;
     font-weight: 300;
-    transition: font-size 0.23s ease;
+        /* transition: font-size 0.23s ease; */
     order: 1;
 }
 
 #navBar a .small{
     padding-top: 12px;
-    font-size: 0;
+    font-size: 15px;
     order: 2;
-    transition: font-size 0.13s ease;
+        /* transition: font-size 0.13s ease; */
 }
 
 #navBar a img{
@@ -125,6 +155,7 @@ a.disabled{
 
 #logo{
     order: 0;
+    height: 48px;
 }
 
 .home-container{
@@ -174,6 +205,9 @@ footer img{
 }
 
 @media (min-width: 760px) { 
+    #navBarMobile{
+        display: none;
+    }
     
     #navBar{
         height: 84px;

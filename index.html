@@ -9,12 +9,21 @@
     		<title>Pravega 2019 - IISc's Annual Cultural Fest</title>
             <link rel="stylesheet" href="./styles/style.css">
             <link rel="stylesheet" href="./styles/landing.css">
+            <link rel="stylesheet" href="./styles/hamburger.css">
             <link rel="icon" href="./assets/img/logo-gold.svg">
         </head>
 	<body onload="activateAnims()">
 		<header>
+            <div id="navBarMobile">
+                <img src="./assets/img/logo-gold.svg" id="mobileNavLogo">
+                <button id="hamburgerButton" class="hamburger hamburger--slider" type="button" >
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button>
+            </div>
             <nav id="navBar">
-                <ul style="flex: 3 0 0; order: 1;">
+                <ul class="navLinkSet" style="flex: 1 0 100%;  order: 1;">
                     <li><a href="#">
                         <span class="small">Events</span>
                         <img class="big" alt="E" src="./assets/img/icons/IconEvents.svg">
@@ -28,11 +37,11 @@
                         <img class="big" alt="U" src="./assets/img/icons/IconUpdates.svg">
                     </a></li>
                 </ul>
-                <a href="#" id="logo" class="curr" style="flex: 1 0 0;">
+                <a href="#" id="logo" class="navLinkSet curr" style="flex: 1 0 100%;">
                         <span class="small">Home</span>
                         <img class="big" src="./assets/img/logo-gold.svg" alt="V">
                 </a>
-                <ul style="flex: 4 0 0; order: 3;">
+                <ul class="navLinkSet" style="flex: 1 0 100%; order: 3;">
                     <li><a href="#">
                         <span class="small">Archive</span>
                         <img class="big" alt="A" src="./assets/img/icons/IconArchive.svg">
@@ -145,18 +154,17 @@
                 <a href="https://www.twitter.com/PravegaIISc"><img src="./assets/img/Twitter_Logo_WhiteOnImage.svg"></a>
             </div>
         </footer>
-        <script src="./lib/navBar.js" type="text/javascript"></script>
-        <script src="./lib/sectionsDisplay.js" type="text/javascript"></script>
+
 
         <div id="test">
-
+            a
         </div>
 
         <style>
 
             #test{
                 position: fixed;
-                bottom: 200px;
+                bottom: 20px;
                 right: 2px;
                 width: 80px;
                 height: 100px;
@@ -166,37 +174,9 @@
             }
         </style>
 
+        <script src="./lib/navBar.js" type="text/javascript"></script>
+        <script src="./lib/sectionsDisplay.js" type="text/javascript"></script>
 
-        <script>
-            var navBarElement = document.getElementById("navBar");
-
-            function navAppear(){
-                if(window.pageYOffset > 10){
-                    navBarElement.style.top = 0;
-                }
-                else{
-                    navBarElement.style.top = "-" + (navBarElement.offsetHeight) + "px";
-                }
-            }
-
-            window.onscroll = function(){
-                navAppear();
-            };
-            window.onresize = function(){
-                navAppear();
-            };
-            window.onload = function(){
-                navAppear();
-            };
-
-            var t=0;
-            var testBox = setInterval(function(){
-                document.getElementById("test").innerHTML =  (document.body.scrollTop) + "<br>" + (document.documentElement.scrollTop) + "<br>" + (window.scrollY) + "<br>" +(window.pageYOffset) + "<br>" + t;
-                    t++;
-            } , 500);
-
-
-        </script>
 	
 
 </body></html>
