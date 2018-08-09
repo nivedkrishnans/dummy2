@@ -15,51 +15,57 @@
 	<body onload="activateAnims()">
 		<header>
             <div id="navBarMobile">
-                <img src="./assets/img/logo-gold.svg" id="mobileNavLogo">
+                <a href="#">
+                    <img src="./assets/img/logo-gold.svg" id="mobileNavLogo">
+                    <div id="homeNav"> Home </div>
+                </a>
                 <button id="hamburgerButton" class="hamburger hamburger--slider" type="button" >
                   <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                   </span>
                 </button>
             </div>
-            <nav id="navBar">
-                <ul class="navLinkSet" style="flex: 1 0 100%;  order: 1;">
-                    <li><a href="#">
-                        <span class="small">Events</span>
-                        <img class="big" alt="E" src="./assets/img/icons/IconEvents.svg">
-                    </a></li>
-                    <li><a href="#">
-                        <span class="small">Registrations</span>
-                        <img class="big" alt="R" src="./assets/img/icons/IconRegistrations.svg">
-                    </a></li>
-                    <li><a href="#">
-                        <span class="small">Updates</span>
-                        <img class="big" alt="U" src="./assets/img/icons/IconUpdates.svg">
-                    </a></li>
-                </ul>
-                <a href="#" id="logo" class="navLinkSet curr" style="flex: 1 0 100%;">
-                        <span class="small">Home</span>
-                        <img class="big" src="./assets/img/logo-gold.svg" alt="V">
-                </a>
-                <ul class="navLinkSet" style="flex: 1 0 100%; order: 3;">
-                    <li><a href="#">
-                        <span class="small">Archive</span>
-                        <img class="big" alt="A" src="./assets/img/icons/IconArchive.svg">
-                    </a></li>
-                    <li><a href="#">
-                        <span class="small">Partners</span>
-                        <img class="big" alt="P" src="./assets/img/icons/IconPartners.svg">
-                    </a></li>
-                    <li><a href="#">
-                        <span class="small">FAQs</span>
-                        <img class="big" alt="Q" src="./assets/img/icons/IconFAQs.svg">
-                    </a></li>
-                    <li><a href="./contact_us.html">
-                        <span class="small">Contact Us</span>
-                        <img class="big" alt="C" src="./assets/img/icons/IconContact.svg">
-                    </a></li>
-                </ul>
-            </nav>
+
+            <div id="hoverNavDisplay">
+                <nav id="navBar">
+                    <ul class="navLinkSet" style="flex: 1 0 100%;  order: 1;">
+                        <li><a href="#">
+                            <span class="small">Events</span>
+                            <img class="big" alt="E" src="./assets/img/icons/IconEvents.svg">
+                        </a></li>
+                        <li><a href="#">
+                            <span class="small">Registrations</span>
+                            <img class="big" alt="R" src="./assets/img/icons/IconRegistrations.svg">
+                        </a></li>
+                        <li><a href="#">
+                            <span class="small">Updates</span>
+                            <img class="big" alt="U" src="./assets/img/icons/IconUpdates.svg">
+                        </a></li>
+                    </ul>
+                    <a href="#" id="logo" class="navLinkSet curr" style="flex: 1 0 100%;">
+                            <span class="small">Home</span>
+                            <img class="big" src="./assets/img/logo-gold.svg" alt="V">
+                    </a>
+                    <ul class="navLinkSet" style="flex: 1 0 100%; order: 3;">
+                        <li><a href="#">
+                            <span class="small">Archive</span>
+                            <img class="big" alt="A" src="./assets/img/icons/IconArchive.svg">
+                        </a></li>
+                        <li><a href="#">
+                            <span class="small">Partners</span>
+                            <img class="big" alt="P" src="./assets/img/icons/IconPartners.svg">
+                        </a></li>
+                        <li><a href="#">
+                            <span class="small">FAQs</span>
+                            <img class="big" alt="Q" src="./assets/img/icons/IconFAQs.svg">
+                        </a></li>
+                        <li><a href="https://ninadhuilgol.github.io/contact.html">
+                            <span class="small">Contact Us</span>
+                            <img class="big" alt="C" src="./assets/img/icons/IconContact.svg">
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         
         <!--
@@ -81,7 +87,7 @@
                     </p>
                     <a id="title-register" href="#" style="animation-play-state: running;">Register Now</a>
                 </div>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Airbus_Logo_2017.svg" id="sponsorLogo">
+                <img src="./assets/img/Airbus_Logo.svg" id="sponsorLogo">
                 <img src="./assets/img/IISc_logo.png" id="iiscLogo">
             </div>
             <div class="home-section l tri-red">

@@ -12,45 +12,59 @@
     </head>
     <body>
 
-		<header>
-            <nav id="navBar">
-                <ul style="flex: 3 0 0; order: 1;">
-                    <li><a href="#">
-                        <span class="small">Events</span>
-                        <img class="big" alt="E" src="./assets/img/icons/IconEvents.svg">
-                    </a></li>
-                    <li><a href="#">
-                        <span class="small">Registrations</span>
-                        <img class="big" alt="R" src="./assets/img/icons/IconRegistrations.svg">
-                    </a></li>
-                    <li><a href="#">
-                        <span class="small">Updates</span>
-                        <img class="big" alt="U" src="./assets/img/icons/IconUpdates.svg">
-                    </a></li>
-                </ul>
-                <a href="./index.html" id="logo" class="curr" style="flex: 1 0 0;">
-                        <span class="small">Home</span>
-                        <img class="big" src="./assets/img/logo-gold.svg" alt="V">
+	<header>
+            <div id="navBarMobile">
+                <a href="#">
+                    <img src="./assets/img/logo-gold.svg" id="mobileNavLogo">
+                    <div id="homeNav"> Home </div>
                 </a>
-                <ul style="flex: 4 0 0; order: 3;">
-                    <li><a href="#">
-                        <span class="small">Archive</span>
-                        <img class="big" alt="A" src="./assets/img/icons/IconArchive.svg">
-                    </a></li>
-                    <li><a href="#">
-                        <span class="small">Partners</span>
-                        <img class="big" alt="P" src="./assets/img/icons/IconPartners.svg">
-                    </a></li>
-                    <li><a href="#">
-                        <span class="small">FAQs</span>
-                        <img class="big" alt="Q" src="./assets/img/icons/IconFAQs.svg">
-                    </a></li>
-                    <li><a href="./contact_us.html">
-                        <span class="small">Contact Us</span>
-                        <img class="big" alt="C" src="./assets/img/icons/IconContact.svg">
-                    </a></li>
-                </ul>
-            </nav>
+                <button id="hamburgerButton" class="hamburger hamburger--slider" type="button" >
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button>
+            </div>
+
+            <div id="hoverNavDisplay">
+                <nav id="navBar">
+                    <ul class="navLinkSet" style="flex: 1 0 100%;  order: 1;">
+                        <li><a href="#">
+                            <span class="small">Events</span>
+                            <img class="big" alt="E" src="./assets/img/icons/IconEvents.svg">
+                        </a></li>
+                        <li><a href="#">
+                            <span class="small">Registrations</span>
+                            <img class="big" alt="R" src="./assets/img/icons/IconRegistrations.svg">
+                        </a></li>
+                        <li><a href="#">
+                            <span class="small">Updates</span>
+                            <img class="big" alt="U" src="./assets/img/icons/IconUpdates.svg">
+                        </a></li>
+                    </ul>
+                    <a href="#" id="logo" class="navLinkSet curr" style="flex: 1 0 100%;">
+                            <span class="small">Home</span>
+                            <img class="big" src="./assets/img/logo-gold.svg" alt="V">
+                    </a>
+                    <ul class="navLinkSet" style="flex: 1 0 100%; order: 3;">
+                        <li><a href="#">
+                            <span class="small">Archive</span>
+                            <img class="big" alt="A" src="./assets/img/icons/IconArchive.svg">
+                        </a></li>
+                        <li><a href="#">
+                            <span class="small">Partners</span>
+                            <img class="big" alt="P" src="./assets/img/icons/IconPartners.svg">
+                        </a></li>
+                        <li><a href="#">
+                            <span class="small">FAQs</span>
+                            <img class="big" alt="Q" src="./assets/img/icons/IconFAQs.svg">
+                        </a></li>
+                        <li><a href="https://ninadhuilgol.github.io/contact.html">
+                            <span class="small">Contact Us</span>
+                            <img class="big" alt="C" src="./assets/img/icons/IconContact.svg">
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         
         <!-- a new div called scrollable content has been made to keep all the scrollable content (duh!) ie. excluding the top bar the social media bar etc. this has been done so that the custom scroll bar can be added in a position which is not at one edge of the browser and starts only after the topbar and ends before the bottom bar -->
@@ -299,6 +313,8 @@
   "retina_detect": true
 });
         </script>
+        <script src="./lib/navBar.js" type="text/javascript"></script>
+        <script src="./lib/sectionsDisplay.js" type="text/javascript"></script>
         
     </body>
 </html>

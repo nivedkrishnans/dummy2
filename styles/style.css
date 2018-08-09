@@ -10,6 +10,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:300,400');
 
+*{
+    border: white dotted 0px;
+}
 html{
     font-family: 'Lato', 'Helvetica', sans-serif;
     font-size: 12px;
@@ -46,13 +49,21 @@ a.disabled{
     color: #787460;
 }
 
+#hoverNavDisplay{
+    box-sizing: border-box;
+    display: block;
+    height: 0;
+    width: 0;
+}
+
 #navBarMobile{
+    box-sizing: border-box;
     width: 100%;
     min-height: 42px;
     position: fixed;
     background-color: rgba(8,8,8,1);
     z-index: 3;
-    padding: 2px 2px;
+    padding: 1px;
     border-bottom: #ffee9c solid 1px;
     top: 0px;
     transition: all 0.3s;    
@@ -60,17 +71,28 @@ a.disabled{
 
 #mobileNavLogo{
     display: inline-block;
-    height: 36px;
+    height: 40px;
 
     float: left;
-    margin: auto 10px;
+    margin: 1px 1px 1px 24px;
 
 }
+
+#homeNav{
+    display: inline-block;
+    padding: 4px;
+    margin: 8px 2px 4px 2px;
+    opacity: 0;
+    font-size: 22px;
+    color: #ffee9c;
+    transition: all 0.3s;    
+}
+
 
 #hamburgerButton{
     position: relative;
     float: right;
-    margin: 6px 10px;
+    margin: 0 10px;
     display: inline-block;
 }
 
@@ -87,6 +109,7 @@ a.disabled{
     z-index: 2;
 
     padding: 2px 4px;
+    padding-top: 32px;
     border-bottom: #ffee9c solid 1px;
     top: 0px;
     transition: all 0.3s;
@@ -149,13 +172,18 @@ a.disabled{
 }
 
 #navBar a img{
-    height: 24px;
+    height: 48px;
     vertical-align: baseline;
 }
 
 #logo{
+    display: none !important;
     order: 0;
     height: 48px;
+}
+
+.navLinkSet{
+    margin-top: 12px; 
 }
 
 .home-container{
@@ -200,16 +228,27 @@ footer > div{
 }
 
 footer img{
-    height: 36px;
+    height: 28px;
     margin: 18px;
 }
 
 @media (min-width: 760px) { 
+    #hoverNavDisplay{
+        z-index: 3;
+        background-color: transparent;
+        height: 84px;
+        width: 100%;
+        position: absolute;
+        top:0;
+        left: 0;
+    }
+
     #navBarMobile{
         display: none;
     }
     
     #navBar{
+        padding: 2px 4px;
         height: 84px;
     }
     
@@ -222,7 +261,13 @@ footer img{
     }
     
     #logo{
+
+        display: flex !important; 
         order: 2;
+    }
+
+    .navLinkSet{
+        margin-top: 0; 
     }
     
     .home-container{

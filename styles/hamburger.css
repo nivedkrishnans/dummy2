@@ -5,7 +5,10 @@
  * @site https://jonsuh.com/hamburgers
  * @link https://github.com/jonsuh/hamburgers
  */
+
+ 
 .hamburger {
+  outline: none;
   padding: 0;
   display: inline-block;
   cursor: pointer;
@@ -23,7 +26,8 @@
     opacity: 0.7; }
 
 .hamburger-box {
-  width: 36px;
+  margin: 8px 0px 0 0px;
+  width: 48px;
   height: 24px;
   display: inline-block;
   position: relative; }
@@ -31,7 +35,7 @@
 .hamburger-inner {
   display: block;
   top: 50%;
-  margin-top: -2px; }
+  margin-top: 0; }
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 32px;
     height: 4px;
@@ -66,7 +70,6 @@
 .hamburger--slider.is-active .hamburger-inner {
   transform: translate3d(0, 10px, 0) rotate(45deg); }
   .hamburger--slider.is-active .hamburger-inner::before {
-    transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
     opacity: 0; }
   .hamburger--slider.is-active .hamburger-inner::after {
     transform: translate3d(0, -20px, 0) rotate(-90deg); }
